@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.button {
+    border: none;
+    padding: 0.625em;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    filter: brightness(0.9);
+  }
+  
+  .button:active {
+    transform: translateY(2px);
+  }
+
+.person-selector{
+    display: flex;
+    justify-content: center;
+    margin: 3em auto 1em;
+    gap: 1em;
+    max-width: 40em;
+}
+
+.person-selector-btn{
+    width: 100%;
+    background-color: #15202b;
+    color: white;
+    padding: 1em;
+}
+
+.active-btn{
+    background-color: #08529d;
+     box-shadow: 0 0  5px #08529d;
+}
+
+.chat-container{
+    max-width: 40em;
+    height: 39em;
+    margin: auto;
+    background-color: #15202b;
+    padding: 0.5em 1.75em;
+    box-shadow: 0 0 1.25em 0.5em #c3c3c333;
+    border-radius: .6em;
+}
+
+.chat-header{
+    margin:1em 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.message{
+    padding: .5em 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.3em;
+}
+.chat-message{
+    height: 25em;
+    overflow-y: scroll;
+}
+.chat-message::-webkit-scrollbar{
+    display: none;
+}
+.message-sender{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+.message-text{
+    word-wrap: break-word;
+}
+.message-time{
+    text-align: right;
+}
+.bg-blue{
+    background-color: #1c9bef;
+}
+
+.bg-grey{
+    background-color: #333;
+
+}
+
+.chat-input-form{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.chat-input{
+    flex-grow: 1;
+    padding: .5em 1em;
+    border-radius: .5rem;
+    border: none;
+    outline-color: #1c9bef;
+    font-size: 1em;
+    color: black;
+}
+
+.submit-btn{
+    background-color: #08529d;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.chat-clear-btn{
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 1em auto;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .person-selector{
+        width: 95%;
+    }
+    .chat-container{
+        width: 95%;
+    }
+    .chat-input-form{
+        width: 100%;
+    }
+    
+}
